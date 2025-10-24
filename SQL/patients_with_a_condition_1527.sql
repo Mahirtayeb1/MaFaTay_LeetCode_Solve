@@ -10,3 +10,12 @@ having conditions not like 'SADIAB100'
 
 
 -- where using (and , and) makes it slow but this code is faster 
+
+-- best way to solve
+select 
+    patient_id,
+    patient_name,
+    conditions
+from patients
+where conditions like 'DIAB1%'
+    or conditions like '% DIAB1%';
