@@ -1,3 +1,4 @@
+-- not efficient solve
 select 
     patient_id,
     patient_name,
